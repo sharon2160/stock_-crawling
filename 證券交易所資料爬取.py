@@ -1,17 +1,17 @@
 ## 證券交易所資料爬取：爬取109-111年1-12月0050的每日收盤價，匯出CSV
 
 #瀏覽器自動操作套件
+
+from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager 
+#瀏覽器自動操作：設定停止秒數
+import time
 
 #瀏覽器自動操作：尋找網頁元素
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-#瀏覽器自動操作：設定停止秒數
-import time
- 
 #網頁解析
 from bs4 import BeautifulSoup 
 
